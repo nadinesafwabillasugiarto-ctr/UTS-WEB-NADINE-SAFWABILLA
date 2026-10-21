@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio dan Dashboard Proyek Perkuliahan - Nadine Safwabilla (Sistem Informasi UNP Kediri)">
+    <title>Nadine Safwabilla | Portofolio & Proyek Akademik</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Animate On Scroll (AOS) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Kustom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigasi Dokumen Semantik -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase fs-6" href="#home">Nadine.dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigasi">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#proyek">Showcase Proyek</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#kalkulator">Kalkulator Cetak</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#kontak">Kontak</a></li>
+                </ul>
+                <button id="btn-theme" class="btn btn-outline-dark btn-sm rounded-pill px-3 ms-lg-3 mt-2 mt-lg-0">
+                    <i class="bi bi-moon-fill me-1"></i> Mode Gelap
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Profil Utama -->
+    <header id="home" class="container py-4 mt-5">
+        <div class="row align-items-center g-4 bg-white p-4 p-md-5 rounded-4 border shadow-sm hero-card"
+            data-aos="fade-down" data-aos-duration="900">
+            <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="200">
+                <img src="img/profile.jpeg"
+                    class="rounded-circle img-fluid p-1 border border-2 border-dark-subtle shadow-sm"
+                    style="width: 140px; height: 140px; object-fit: cover;"
+                    onerror="this.src='https://picsum.photos/id/64/200/200'" alt="Foto Profil Nadine Safwabilla">
+            </div>
+            <div class="col-md-9 text-center text-md-start" data-aos="fade-left" data-aos-delay="300">
+                <span class="badge bg-dark-subtle text-dark border mb-2 px-3 py-1 rounded-pill small">Sistem Informasi •
+                    UNP Kediri</span>
+                <h1 class="h2 fw-bold mb-1">Nadine Safwabilla</h1>
+                <p class="text-secondary fw-semibold mb-2">Business Process Analyst, Database Designer, & Web Enthusiast
+                </p>
+                <p class="small text-muted fst-italic mb-3">
+                    "Menghubungkan efisiensi analisis proses bisnis (BPMN), ketepatan basis data relasional (MySQL), dan
+                    kemudahan antarmuka web interaktif."
+                </p>
+                <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+                    <a href="#proyek" class="btn btn-dark btn-sm px-4 rounded-pill">Lihat Proyek</a>
+                    <a href="#kalkulator" class="btn btn-outline-dark btn-sm px-4 rounded-pill">Simulasi Kasir Cetak</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama (Semantik main) -->
+    <main class="container py-3">
+        <div class="row g-4">
+
+            <!-- Kolom Kiri: Portofolio Proyek, Profil, dan Modul Interaktif -->
+            <div class="col-lg-8">
+
+                <!-- Bagian Tentang Diri -->
+                <section id="tentang" class="bg-white p-4 p-md-5 rounded-4 border shadow-sm mb-4" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <h2 class="h4 fw-bold mb-3">Tentang Saya</h2>
+                    <p class="text-secondary mb-3">
+                        Halo! Saya Nadine Safwabilla, mahasiswi Sistem Informasi di Universitas Nusantara PGRI Kediri.
+                        Dalam perkuliahan, saya mendalami perancangan alur kerja sistem menggunakan <strong>BPMN (Bizagi
+                            Modeler)</strong>, implementasi basis data relasional di <strong>MySQL /
+                            phpMyAdmin</strong>, serta pembuatan antarmuka web responsif berbasis Bootstrap dan
+                        manipulasi DOM JavaScript.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-light text-dark border px-3 py-2">Bizagi BPMN</span>
+                        <span class="badge bg-light text-dark border px-3 py-2">MySQL / MariaDB</span>
+                        <span class="badge bg-light text-dark border px-3 py-2">JavaScript DOM</span>
+                        <span class="badge bg-light text-dark border px-3 py-2">Visual Photography</span>
+                    </div>
+                </section>
+
+                <!-- Bagian Showcase 3 Proyek Mata Kuliah -->
+                <section id="proyek" class="bg-white p-4 p-md-5 rounded-4 border shadow-sm mb-4" data-aos="fade-up"
+                    data-aos-delay="150">
+                    <div
+                        class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-4">
+                        <div>
+                            <h2 class="h4 fw-bold mb-1">Showcase Proyek Perkuliahan</h2>
+                            <small class="text-secondary">Integrasi tugas mata kuliah ke dalam satu dashboard web
+                                terpadu</small>
+                        </div>
+                        <!-- Interaktivitas DOM: Pencarian Langsung -->
+                        <div class="col-md-5">
+                            <input type="text" id="cari-proyek" class="form-control form-control-sm"
+                                placeholder="Cari proyek (BPMN, SQL, Web)...">
+                        </div>
+                    </div>
+
+                    <div class="row g-3" id="daftar-proyek">
+
+                        <!-- Proyek 1: Analisis Proses Bisnis (BPMN) -->
+                        <article class="col-md-12 item-proyek" data-kategori="bpmn proses bisnis analisis"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="card h-100 border rounded-3 p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-warning-subtle text-warning-emphasis">Analisis Proses
+                                        Bisnis</span>
+                                    <small class="text-muted">Kelompok 3 • Bizagi Modeler</small>
+                                </div>
+                                <h3 class="h5 fw-bold">Pemodelan Alur Layanan Fotocopy & Print (AS-IS)</h3>
+                                <p class="text-secondary small mb-2">
+                                    Memodelkan alur interaksi antara Pelanggan dan Operator Kasir: mulai dari penyerahan
+                                    berkas fisik atau via WhatsApp, pengecekan kelayakan dokumen pada gateway
+                                    percabangan, penghitungan total tarif, transaksi pembayaran tunai/QRIS, hingga
+                                    penyerahan hasil cetakan.
+                                </p>
+                                <div class="small text-muted border-top pt-2">
+                                    <strong>Output:</strong> Diagram alur operasional cetak offline (Swimlane diagram).
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Proyek 2: Basis Data (MySQL / phpMyAdmin) -->
+                        <article class="col-md-12 item-proyek" data-kategori="database basis data mysql sql phpmyadmin"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="card h-100 border rounded-3 p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-primary-subtle text-primary-emphasis">Basis Data</span>
+                                    <small class="text-muted">MariaDB • phpMyAdmin</small>
+                                </div>
+                                <h3 class="h5 fw-bold">Skema Basis Data Sistem Percetakan (tugas5_percetakan)</h3>
+                                <p class="text-secondary small mb-2">
+                                    Perancangan basis data transaksi percetakan lengkap dengan relasi Primary Key dan
+                                    Foreign Key. Terdiri dari tabel: <code>pelanggan</code>, <code>kartu_member</code>
+                                    (poin reward), <code>jenis_print</code> (katalog tarif cetak),
+                                    <code>transaksi</code>, dan <code>detail_transaksi</code>.
+                                </p>
+                                <div class="small text-muted border-top pt-2">
+                                    <strong>Output:</strong> Struktur skema SQL dan integritas relasi referensial
+                                    (CASCADE / SET NULL).
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Proyek 3: Pemrograman Web (Galeri Fotografi) -->
+                        <article class="col-md-12 item-proyek"
+                            data-kategori="web frontend bootstrap html visual gallery foto" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <div class="card h-100 border rounded-3 p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge bg-success-subtle text-success-emphasis">Pemrograman Web</span>
+                                    <small class="text-muted">Bootstrap 5 • Responsif</small>
+                                </div>
+                                <h3 class="h5 fw-bold">Nadine Gallery & Visual Photography Journal</h3>
+                                <p class="text-secondary small mb-2">
+                                    Pembuatan antarmuka web portofolio galeri foto yang responsif dengan konsep visual
+                                    estetik dan tenang. Menggunakan grid layout adaptif untuk kenyamanan tampilan di
+                                    perangkat ponsel maupun layar komputer.
+                                </p>
+                                <div class="small text-muted border-top pt-2">
+                                    <strong>Output:</strong> Struktur HTML5 semantik, CSS kustom, dan interaktivitas
+                                    DOM.
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <p id="pesan-kosong" class="text-center text-muted py-3 d-none">Proyek yang dicari tidak ditemukan.
+                    </p>
+                </section>
+
+                <!-- Modul Kalkulator: Simulasi Kasir Cetak (BPMN & Basis Data) -->
+                <section id="kalkulator" class="bg-white p-4 p-md-5 rounded-4 border shadow-sm mb-4" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="border-bottom pb-3 mb-3">
+                        <span class="badge bg-dark mb-1">Modul Praktik JS</span>
+                        <h2 class="h4 fw-bold mb-1">Simulasi Kasir Cetak (Kalkulator BPMN & Basis Data)</h2>
+                        <p class="text-secondary small mb-0">
+                            Mengimplementasikan tahap <em>"Menghitung Total Biaya"</em> pada alur BPMN dengan daftar
+                            tarif riil dari tabel <code>jenis_print</code> basis data.
+                        </p>
+                    </div>
+
+                    <form id="form-kalkulator" onsubmit="return false;">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="tipe-print" class="form-label small fw-semibold">Pilihan Layanan & Kertas
+                                    (Tabel jenis_print)</label>
+                                <select id="tipe-print" class="form-select form-select-sm">
+                                    <option value="PRT-HVS-A4">PRT-HVS-A4 (Kertas HVS A4 - Rp 1.500 / lbr)</option>
+                                    <option value="PRT-HVS-F4">PRT-HVS-F4 (Kertas HVS F4 - Rp 1.500 / lbr)</option>
+                                    <option value="CTK-FTO-4R">CTK-FTO-4R (Cetak Foto 4R - Rp 6.000 / lbr)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="jumlah-lembar" class="form-label small fw-semibold">Jumlah Lembar</label>
+                                <input type="number" id="jumlah-lembar" class="form-control form-control-sm" min="1"
+                                    max="1000" value="1">
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label small fw-semibold d-block">Pilihan Tambahan:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="finishing-jilid" value="5000">
+                                    <label class="form-check-label small" for="finishing-jilid">Finishing Jilid (+Rp
+                                        5.000)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="member-diskon">
+                                    <label class="form-check-label small" for="member-diskon">Diskon Member (Tabel
+                                        kartu_member - Potongan 10%)</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="button" id="btn-hitung"
+                                    class="btn btn-dark btn-sm px-4 rounded-pill">Hitung Biaya</button>
+                                <button type="button" id="btn-reset-kalkulator"
+                                    class="btn btn-outline-secondary btn-sm px-3 rounded-pill ms-2">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Tampilan Output DOM Kalkulator dengan Rincian Nota -->
+                    <div id="output-kalkulator" class="mt-4 p-4 bg-light rounded-3 border d-none">
+                        <h5 class="fw-bold mb-3 border-bottom pb-2">Rincian Perhitungan Transaksi</h5>
+
+                        <div class="d-flex justify-content-between small text-secondary mb-1">
+                            <span>Subtotal Cetak (<span id="rincian-qty">0</span> lbr):</span>
+                            <span id="rincian-subtotal" class="fw-semibold text-dark">Rp 0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between small text-secondary mb-1">
+                            <span>Biaya Tambahan (Finishing Jilid):</span>
+                            <span id="rincian-jilid" class="fw-semibold text-dark">Rp 0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between small text-secondary mb-2 border-bottom pb-2">
+                            <span>Diskon Member (10%):</span>
+                            <span id="rincian-diskon" class="fw-semibold text-danger">- Rp 0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="fw-bold text-dark">Total Akhir Tagihan:</span>
+                            <span id="hasil-biaya" class="h4 fw-bold text-dark mb-0">Rp 0</span>
+                        </div>
+
+                        <div class="p-2 rounded bg-white border small text-muted">
+                            <strong>Status Alur Dokumen:</strong> <span id="hasil-waktu">Menunggu pembayaran
+                                dikonfirmasi</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formulir Kontak dengan Validasi JavaScript -->
+                <section id="kontak" class="bg-white p-4 p-md-5 rounded-4 border shadow-sm" data-aos="fade-up"
+                    data-aos-delay="250">
+                    <h2 class="h4 fw-bold mb-2">Hubungi Saya</h2>
+                    <p class="text-secondary small mb-3">Kirimkan pesan untuk diskusi proyek atau konsultasi sistem.</p>
+
+                    <div id="alert-kontak" class="alert alert-success d-none py-2 px-3 small" role="alert">
+                        Pesan Anda berhasil divalidasi dan terkirim secara simulasi!
+                    </div>
+
+                    <form id="form-kontak" novalidate>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label small fw-semibold">Nama Lengkap</label>
+                            <input type="text" class="form-control form-control-sm" id="nama"
+                                placeholder="Masukkan nama Anda">
+                            <div id="err-nama" class="text-danger small mt-1 d-none">Nama wajib diisi minimal 3
+                                karakter.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label small fw-semibold">Alamat Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email"
+                                placeholder="nama@email.com">
+                            <div id="err-email" class="text-danger small mt-1 d-none">Format email tidak valid.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label small fw-semibold">Isi Pesan</label>
+                            <textarea class="form-control form-control-sm" id="pesan" rows="3"
+                                placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                            <div id="err-pesan" class="text-danger small mt-1 d-none">Pesan tidak boleh kosong.</div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-dark btn-sm px-4 rounded-pill">Kirim Pesan</button>
+                            <button type="reset" class="btn btn-outline-danger btn-sm px-3 rounded-pill">Reset</button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+
+            <!-- Kolom Kanan: Aside Informasi Akademik & Basis Data -->
+            <aside class="col-lg-4">
+
+                <!-- Informasi Mahasiswa -->
+                <div class="card border rounded-4 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card-header bg-white fw-bold py-3 border-bottom">
+                        Informasi Akademik
+                    </div>
+                    <div class="card-body small">
+                        <p class="mb-2"><strong>Nama:</strong> Nadine Safwabilla</p>
+                        <p class="mb-2"><strong>Institusi:</strong> Universitas Nusantara PGRI Kediri</p>
+                        <p class="mb-2"><strong>Fakultas:</strong> Teknik dan Ilmu Komputer</p>
+                        <p class="mb-2"><strong>Program Studi:</strong> Sistem Informasi</p>
+                        <p class="mb-0"><strong>Dosen Pengampu:</strong> Rudy Eko Prasetya, M.Kom.</p>
+                    </div>
+                </div>
+
+                <!-- Ringkasan Skema Database Percetakan -->
+                <div class="card border rounded-4 shadow-sm mb-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="card-header bg-white fw-bold py-3 border-bottom">
+                        Tabel Basis Data (Tugas 5)
+                    </div>
+                    <div class="card-body small p-0">
+                        <ul class="list-group list-group-flush rounded-bottom-4">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><code>pelanggan</code></span>
+                                <span class="badge bg-secondary-subtle text-secondary">PK: nik</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><code>kartu_member</code></span>
+                                <span class="badge bg-secondary-subtle text-secondary">FK: nik</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><code>jenis_print</code></span>
+                                <span class="badge bg-secondary-subtle text-secondary">Tarif Katalog</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><code>transaksi</code></span>
+                                <span class="badge bg-secondary-subtle text-secondary">Status Nota</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><code>detail_transaksi</code></span>
+                                <span class="badge bg-secondary-subtle text-secondary">Relasi Item</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tautan GitHub -->
+                <div class="card border rounded-4 shadow-sm p-4 text-center bg-light" data-aos="fade-left"
+                    data-aos-delay="400">
+                    <h3 class="h6 fw-bold mb-2">Repositori GitHub</h3>
+                    <p class="small text-secondary mb-3">Kode sumber halaman ini tersimpan di repositori publik dan
+                        di-hosting via GitHub Pages.</p>
+                    <a href="https://github.com" target="_blank" class="btn btn-dark btn-sm rounded-pill px-3">
+                        <i class="bi bi-github me-1"></i> Buka GitHub
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer Dokumen -->
+    <footer class="bg-white border-top text-center py-3 mt-4">
+        <div class="container text-secondary small">
+            <p class="mb-0">&copy; 2026 Nadine Safwabilla - UTS Pemrograman Web Sistem Informasi UNP Kediri.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate On Scroll (AOS) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Skrip JavaScript Eksternal -->
+    <script src="js/script.js"></script>
+
+    <!-- Inisialisasi AOS Halus & Responsif -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+    </script>
+</body>
+
+</html>
