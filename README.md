@@ -6,7 +6,7 @@ Proyek ini dibangun untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Pemro
 - **Nama Mahasiswa:** Nadine Safwabilla Al Khalifi Sugiarto
 - **NPM:** 2513020002
 - **Tautan Repositori:** https://github.com/nadinesafwabillasugiarto-ctr/tugas-web-2A
-- **Tautan Live Web:** https://nadinesafwabilla.github.io/UTS-WEB-NADINE-SAFWABILLA/
+- **Tautan Live Web:** https://nadinesafwabillasugiarto-ctr.github.io/UTS-WEB-NADINE-SAFWABILLA/
 
 ---
 
